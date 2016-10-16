@@ -1,0 +1,64 @@
+.main .box{
+    width: 1024px;
+    margin: 0 auto;
+    min-height: 600px;
+    padding: 40px 0;
+}
+.main .box .left{
+    float: left;
+}
+.main .box .left .line{
+    height: 60px;
+    border-bottom: 1px solid #3a3a3a;
+}
+.main .box .left li{
+    padding: 0 70px;
+    font-size: 16px;
+    font-family: "Microsoft Yahei";
+    line-height:45px ;
+    text-align: center;
+}
+.main .box .left li+li{
+    margin: 20px 30px;
+    padding: 0;
+    font-size: 1.4em;
+    font-family: "Microsoft Yahei";
+    line-height: 30px;
+}
+.main .box .left .active{
+    border-bottom: 1px solid #8e8f8f;
+}
+.main .box .content{
+    float: left;
+    margin-left: 30px;
+    width: 774px;
+}
+.main .box .content .title{
+    line-height: 60px;
+    font-size: 2.5em;
+    /*font-weight: bold;*/
+    color: #066db7;
+    font-family: "Microsoft Yahei";
+}
+.main .box .content img{
+    margin-bottom: 10px;
+}
+.main .box .content .news_list{
+    padding: 15px 30px;
+}
+.main .box .content .news{
+    overflow: hidden;
+    font-size: 1.2em;
+    line-height: 24px;
+}
+.main .box .content .news a{
+    float: left;
+}
+.main .box .content .news a:hover{
+    color: #0000FF;
+    cursor: pointer;
+}
+.main .box .content .news .date{
+    float: right;
+    /*width: 50px;*/
+}

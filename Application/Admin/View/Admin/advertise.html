@@ -1,0 +1,53 @@
+<div class="container" id="adver">
+	<div class="col-sm-3" style="padding-top:45px;">
+		<h3>首页广告位状态：</h3>
+	</div>
+	<form class="form-horizontal col-sm-4" style="padding:25px;" >
+	  	<div class="form-group">
+			<div class="radio">
+			  <label>
+			    <input type="radio"  value="0" v-model="status">
+			    关闭
+			  </label>
+			</div>
+	  	</div>
+	  	<div class="form-group">
+			<div class="radio">
+			  <label>
+			    <input type="radio" value="1" v-model="status">
+			    开启
+			  </label>
+			</div>
+	  	</div>
+
+	  	<div class="form-group">
+	    	<div class=" col-sm-2" style="padding-top:20px;">
+		      <button type="button" class="btn btn-default" @click="submit">确定</button>
+		    </div>
+		 </div>
+	</form>
+</div>
+<script type="text/javascript">
+	var form=new Vue({
+		el:"#adver",
+		data:{
+			status:"{$status}"
+		},
+		methods:{
+			submit:function() {
+				$.get("/index.php?m=admin&c=admin&a=doAdvertiseUpate",{status:form.status},function(res) {
+					if(res.status==1){
+						dialog.successFun(res.message,function() {
+							return;
+						})
+					}
+					else{
+						dialog.error(res.message,function() {
+							return;
+						})
+					}
+				},"json")
+			}
+		}
+	})
+</script>

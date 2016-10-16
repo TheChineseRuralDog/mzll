@@ -1,0 +1,185 @@
+.warp{
+    width: 100%;
+    /*min-width: 1920px;*/
+    background-color: #ffffff;
+    position: absolute;
+
+}
+.header{
+    width: 1400px;
+    height: 118px;
+}
+.header .content{
+    width: 1067px;
+    height: 118px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+.header .content .top{
+    width: 1067px;
+    height: 25px;
+    padding-top: 5px;
+    font: 16px "SimHei";
+}
+.header .content .top .right{
+    margin-right: 20px;
+}
+.header .content .top img{
+    margin-right: 10px;
+}
+.header .logo{
+    margin-top: 15px;
+    width: 380px;
+    height: 62px;
+    z-index: 999;
+    background: url("../images/logo.png") no-repeat;
+}
+.header  .head_nav{
+    width: 725px;
+    z-index: 1;
+    height: 42px;
+    margin:15px -13px 0 -26px;
+    background-image: url("../images/nav.png");
+    background-position: -15px 8px ;
+
+}
+.header .head_nav li{
+    float: left;
+    font: 14px "Microsoft YaHei";
+    text-align: center;
+    width: 145px;
+    height: 42px;
+    cursor: pointer;
+    line-height: 25px;
+}
+.header .head_nav li:first-child{
+    color: #76a717;
+}
+
+
+/*--------------第一屏-----------------------------------*/
+.section1{
+    width: 1400px;
+    background-color: #ffffff;
+    min-height: 503px;
+}
+.section1 .section1_con{
+    width: 1063px;
+    margin: 25px auto;
+}
+.section1 .section1_con .userinfo{
+    font-size: 16px;
+    font-family: "Microsoft YaHei";
+    font-weight: 600;
+}
+.section1 .section1_con .userinfo span{
+     padding-right: 5px;
+ }
+.section1 .section1_con .userinfo a{
+    text-decoration: underline;
+    padding: 0 14px;
+    cursor: pointer;
+}
+
+.red{
+    color: #ff3600;
+}
+.section1 .section1_con .userinfo .creat{
+    font-size: 14px;
+    color: #99cc01;
+    font-weight: 400;
+}
+.section1 .section1_con table{
+    width: 1063px;
+    margin-top: 28px;
+    text-align: center;
+    font-size: 14px;
+    font-family: "Microsoft YaHei";
+}
+.tab_no{
+    width: 90px;
+}
+.tab_name{
+    width: 432px;
+}
+.tab_type{
+    width: 170px;
+}
+.tab_num{
+    width: 88px;
+}
+.tab_time{
+    width: 160px;
+}
+.tab_opt{
+    width: 108px;
+}
+.section1 .section1_con table td{
+    height: 40px;
+    border:1px solid #c1eba2;
+    line-height: 40px;
+}
+.section1 .section1_con table .title td{
+    font-weight: 600;
+    color: #ffffff;
+    background-color: #99cc01;
+}
+.section1 .section1_con table .btn{
+    color: #88a863;
+    padding-right: 10px;
+    text-decoration: underline;
+    cursor: pointer;
+}
+.page_flow{
+    width: 540px;
+    height: 45px;
+    margin-top: 5px;
+    margin-left: 20px;
+    padding-left: 500px;
+    padding-top: 10px;
+    border-top: 1px solid #c1eba2;
+    border-bottom: 1px solid #c1eba2;
+    font-size: 14px;
+    font-family: "Microsoft YaHei";
+    line-height: 25px;
+}
+.page_flow a{
+     display: inline-block;
+     margin: 0 3px;
+    cursor: pointer;
+ }
+.page_flow select{
+    width: 135px;
+    height: 25px;
+
+}
+.page_flow .page_num {
+    width: 38px;
+    height: 25px;
+    text-align: center;
+}
+.page_flow .go_page{
+    width: 40px;
+    height: 22px;
+    background-color: #f0f2f3;
+    border-radius: 3px;
+    border: 1px solid #aeaeae;
+    padding: 0 0 0 5px;
+    margin-right: 0px;
+    text-align: center;
+}
+
+
+
+/*--------------第一屏-----------------------------------*/
+
+/*--------------第二屏-----------------------------------*/
+.section2{
+    width: 1400px;
+    height: 300px;
+    background: url("../images/manage_bottom.png") no-repeat -250px 0;
+    overflow: hidden;
+    position: relative;
+}
+
+/*--------------第二屏-----------------------------------*/

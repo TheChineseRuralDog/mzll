@@ -1,0 +1,59 @@
+
+<link href="/Public/css/bootstrap.min.css" rel="stylesheet">
+<script src="/Public/js/jquery-1.10.2.min.js"></script>
+<script src="/Public/js/vue.min.js"></script>
+<script src="/Public/js/layer.js"></script>
+<script src="/Public/js/dialog.js"></script>
+<script src="/Public/js/bootstrap.min.js"></script>
+
+<div class="container" id="pv">
+	<form class="form-horizontal" style="padding:25px;" >
+	  	<div class="form-group">
+	    	<h3 class="col-sm-2 col-sm-offset-2 control-label">pv附加费</h3>
+	  	</div>
+
+	  	<div class="form-group">
+			<div class="col-sm-3  col-sm-offset-2">
+				<input type="text" class="form-control" id="inputEmail3" v-model="form.time" placeholder="pv附加费选项">
+			</div>
+		    <div class="col-sm-2">
+		      <input type="text" class="form-control" id="inputEmail3" v-model="form.pricerate" placeholder="基于基础价格的倍率">
+		    </div>
+	  	</div>
+
+	  	<div class="form-group">
+	    <div class="col-sm-offset-3 col-sm-2">
+	      <button type="button" class="btn btn-default" @click="submit">确定</button>
+	    </div>
+	 </div>
+	</form>
+</div>
+<script type="text/javascript">
+	var index = parent.layer.getFrameIndex(window.name); //获取窗口索引
+	var form=new Vue({
+		el:"#pv",
+		data:{
+			form:{
+				time:"",
+				pricerate:"",
+			}
+		},
+		methods:{
+			submit:function() {
+				$.post("/index.php?m=admin&c=cost&a=doAddPvCate",{form:form.form},function(res) {
+					if(res.status==1){
+						dialog.successFun(res.message,function() {
+							return;
+						});
+						parent.list.updatePvCate(); 
+						parent.layer.close(index);
+						
+					}
+					else{
+						dialog.error(res.message);
+					}
+				},"json")
+			}
+		}
+	})
+</script>

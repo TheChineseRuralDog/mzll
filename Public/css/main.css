@@ -1,0 +1,261 @@
+.warp{
+    width: 100%;
+    min-width: 1903px;
+    background-color: #ffffff;
+    position: absolute;
+
+}
+.header{
+    width: 100%;
+    height: 118px;
+}
+.header .content{
+    width: 1067px;
+    height: 118px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+.header .content .top{
+    width: 1067px;
+    height: 25px;
+    padding-top: 5px;
+    font: 16px "SimHei";
+}
+.header .content .top .right{
+    margin-right: 20px;
+}
+.header .content .top img{
+    margin-right: 10px;
+}
+.header .logo{
+    margin-top: 15px;
+    width: 380px;
+    height: 62px;
+    z-index: 999;
+    background: url("../images/logo.png") no-repeat;
+}
+.header  .head_nav{
+    width: 725px;
+    z-index: 1;
+    height: 42px;
+    margin:15px -13px 0 -26px;
+    background-image: url("../images/nav.png");
+    background-position: -15px 8px ;
+
+}
+.header .head_nav li{
+    float: left;
+    font: 14px "Microsoft YaHei";
+    text-align: center;
+    width: 145px;
+    height: 42px;
+    cursor: pointer;
+    line-height: 25px;
+}
+.header .head_nav li:first-child{
+    color: #76a717;
+}
+
+/*--------------第一屏-----------------------------------*/
+.section1{
+    width: 1903px;
+    height: 286px;
+    padding-top: 328px;
+    perspective: 800px;
+    -webkit-perspective: 800px;
+    -moz-perspective: 800px;
+    background-image: url("../images/index_banner_1.png");
+}
+.section1 .btn_1st{
+    height: 166px;
+    width: 910px;
+    margin: 0 auto;
+
+}
+.section1 .btn_1st .btn{
+    width: 166px;
+    height: 166px;
+    position: relative;
+    float: left;
+    margin: 0 8px;
+    cursor: pointer;
+    -webkit-transform-style: preserve-3d;
+    -moz-transform-style: preserve-3d;
+    -ms-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+    -webkit-transition: all 1s;
+    -moz-transition: all 1s;
+    -ms-transition: all 1s;
+    -o-transition: all 1s;
+    transition: all 1s;
+
+}
+.section1 .btn_1st .btn .side{
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    -ms-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -webkit-transform-style: preserve-3d;
+    -moz-transform-style: preserve-3d;
+    -ms-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+}
+.section1 .btn_1st .btn p{
+    position: absolute;
+    top: 33px;;
+    left: 40px;;
+    font: 42px "SimHei";
+    color: #ffffff;
+}
+a{
+    color: #ffffff;
+}
+.section1 .btn_1st .btn .face {
+    position: absolute;
+    width: 166px;
+    height: 166px;
+    -webkit-transform: rotateY(0deg);
+    -moz-transform: rotateY(0deg);
+    -ms-transform: rotateY(0deg);
+    -o-transform: rotateY(0deg);
+    transform: rotateY(0deg);
+}
+.section1 .btn_1st .btn .back{
+    position: absolute;
+    width: 166px;
+    height: 166px;
+    -webkit-transform: rotateY(180deg);
+    -moz-transform: rotateY(180deg);
+    -ms-transform: rotateY(180deg);
+    -o-transform: rotateY(180deg);
+    transform: rotateY(180deg);
+}
+.section1 .btn_1st .btn:hover{
+    -webkit-transform: rotateY(180deg);
+    -moz-transform: rotateY(180deg);
+    -ms-transform: rotateY(180deg);
+    -o-transform: rotateY(180deg);
+    transform: rotateY(180deg);
+}
+
+
+
+/*--------------第一屏-----------------------------------*/
+
+
+/*--------------第二屏-----------------------------------*/
+.section2{
+    background-image: url("../images/index_banner_2.png");
+    width: 1903px;
+    height: 796px;
+    overflow: hidden;
+    position: relative;
+}
+.section2_title{
+    width: 415px;
+    height: 120px;
+    position: absolute;
+    top: 275px;
+    left: 975px;
+    font: 49px "Microsoft YaHei";
+    font-weight: 300;
+    color: #ffffff;
+}
+.section2_text{
+    width: 590px;
+    height: 115px;
+    position: absolute;
+    top: 480px;
+    left: 905px;
+    font: 18px "Microsoft YaHei";
+    line-height: 32px;
+}
+/*--------------第二屏-----------------------------------*/
+
+
+/*--------------第三屏-----------------------------------*/
+.section3{
+    background-image: url("../images/index_banner_3.png");
+    width: 1903px;
+    height: 860px;
+    overflow: hidden;
+    position: relative;
+}
+.section3_text1{
+    position: absolute;
+    top: 165px;
+    left: 466px;
+    width: 988px;
+    height: 225px;
+    font: 18px "Microsoft YaHei";
+    line-height: 32px;
+}
+.section3_text2{
+    position: absolute;
+    top: 548px;
+    left: 1045px;
+    width: 348px;
+    height: 186px;
+    font: 20px "SimHei";
+    color: #ffffff;
+    line-height: 32px;
+    transform: skew(-10deg,0deg);
+    -ms-transform: skew(-10deg,0deg);/* IE 9 */
+    -webkit-transform: skew(-10deg,0deg);/* Safari and Chrome */
+    -o-transform: skew(-10deg,0deg);/* Opera */
+    -moz-transform: skew(-10deg,0deg);/* Firefox */
+}
+
+/*--------------第三屏-----------------------------------*/
+
+
+
+/*--------------第四屏-----------------------------------*/
+.section4{
+    width: 1903px;
+    height: 938px;
+    background-image: url("../images/index_banner_4.png");
+    overflow: hidden;
+    position: relative;
+    padding-top: 140px;
+}
+.section4 .login{
+    width: 857px;
+    height: 434px;
+    margin: 0 auto;
+    background-image: url("../images/login.png");
+}
+.section4 .login .top{
+    width: 845px;
+    height: 65px;
+    padding-left: 685px;
+    font: 30px "Microsoft YaHei";
+}
+.uid,.pwd,.checkcode{
+    width: 535px;
+    height: 50px;
+    margin: 20px 0 0 220px;
+    border-radius: 5px;
+    font-size: 20px;
+}
+.checkcode{
+    width: 210px;
+}
+.section4 .login .bottom{
+    font: 12px "Microsoft YaHei";
+    margin:20px 0 0 215px;
+}
+.login_btn{
+    width: 212px;
+    height: 50px;
+    background-color: #99cc01;
+    border-radius: 5px;
+    box-shadow: 1px 1px 1px #99cc01;
+    font: 24px "Microsoft YaHei";
+    color: #ffffff;
+    line-height: 50px;
+    text-align: center;
+    margin: 8px 0 0 220px;
+    cursor: pointer;
+}
+/*--------------第四屏-----------------------------------*/

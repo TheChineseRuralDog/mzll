@@ -1,0 +1,54 @@
+<form class="form-horizontal" id="form">
+  <div class="form-group">
+    <label  class="col-sm-2 control-label">手机号</label>
+    <div class="col-sm-10">
+      <input type="text" class="form-control col-sm-4" placeholder="手机号" v-model="form.phone">
+    </div>
+  </div>
+  <div class="form-group">
+    <label class="col-sm-2 control-label">密码</label>
+    <div class="col-sm-10">
+      <input type="password" class="form-control" placeholder="Password" v-model="form.pwd">
+    </div>
+  </div>
+  <div class="form-group">
+    <div class="col-sm-offset-2 col-sm-10">
+      <div class="checkbox">
+        <label>
+          <!-- <input type="checkbox"> Remember me -->
+        </label>
+      </div>
+    </div>
+  </div>
+  <div class="form-group">
+    <div class="col-sm-offset-2 col-sm-10">
+      <button type="button" class="btn btn-default" @click="submit">登录</button>
+    </div>
+  </div>
+</form>
+<!-- <a target="_blank" href="http://wpa.qq.com/msgrd?v=3&uin=786942729&site=qq&menu=yes"><img border="0" src="http://wpa.qq.com/pa?p=2:786942729:51" alt="点击这里给我发消息" title="点击这里给我发消息"/></a> -->
+<script type="text/javascript">
+  var login=new Vue({
+    el:"#form",
+    data:{
+      form:{
+        phone:"",
+        pwd:""
+      }
+    },
+    methods:{
+      submit:function() {
+        $.post("/index.php?c=home&c=index&a=doLogin",{form:login.form},function(res) {
+            if(res.status==1){
+              dialog.successFun(res.message,function() {
+                window.location.href="/index.php?m=Home";
+              })
+            }
+            else{
+              dialog.error(res.message);              
+            }
+        },"json")
+      }
+    }
+  })
+</script>

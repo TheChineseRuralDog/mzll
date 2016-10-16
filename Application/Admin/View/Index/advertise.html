@@ -1,0 +1,34 @@
+<div class="container" id="adver">
+	<form class="form-horizontal" style="padding:25px;" >
+	  	<div class="form-group">
+			<div class="radio">
+			  <label>
+			    <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked>
+			    关闭
+			  </label>
+			</div>
+	  	</div>
+	  	<div class="form-group">
+			<div class="radio">
+			  <label>
+			    <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked>
+			    开启
+			  </label>
+			</div>
+	  	</div>
+
+	  	<div class="form-group">
+	    	<div class="col-sm-offset-3 col-sm-2">
+		      <button type="button" class="btn btn-default" @click="submit">确定</button>
+		    </div>
+		 </div>
+	</form>
+</div>
+<script type="text/javascript">
+	var form=new Vue({
+		el:"#adver",
+		data:{
+
+		}
+	})
+</script>
